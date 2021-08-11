@@ -13,10 +13,10 @@ public class OkrData {
 
     public static NewOkr getNewOkr() {
         return NewOkr.builder()
-                .objective(faker.name().fullName())
-                .title(faker.name().fullName())
-                .managerId(faker.name().fullName())
-                .verticalId(faker.name().fullName())
+                .objective("Prueba QA EDWIN")
+                .title("Otro Okr mas")
+                .managerId("abcde")
+                .verticalId("abcde")
                 .build();
 
     }
