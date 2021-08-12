@@ -23,7 +23,7 @@ public class OkrData {
     public static  NewKr getNewKr(){
         return NewKr.builder()
                 .idOkr("abcd")
-                .managerName("Edd")
+                .managerName("Edwin")
                 .managerEmail("edwin@gamil.com")
                 .startDate("2020/08/05")
                 .endDate("2020/08/08")

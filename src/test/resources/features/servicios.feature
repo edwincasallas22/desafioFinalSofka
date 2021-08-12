@@ -8,3 +8,8 @@ Característica: Servicio POST crear OKR
   Escenario: Creacion exitosa de un KR
     Cuando se tiene la informacion de un nuevo KR para crearlo
     Entonces se crea un KR exitosamente
+
+  Escenario: Eliminacion exitosa de un KR
+    Cuando se tiene la informacion de un KR para eliminar
+    Entonces se elimino un KR exitosamente
+

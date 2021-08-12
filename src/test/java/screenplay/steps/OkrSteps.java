@@ -1,9 +1,11 @@
 package screenplay.steps;
 
 import co.com.sofkau.api.model.data.OkrData;
+import co.com.sofkau.api.model.delete.RespuestaDelete;
 import co.com.sofkau.api.model.kr.RespuestaKr;
 import co.com.sofkau.api.model.okr.NewOkr;
 import co.com.sofkau.api.model.okr.RespuestaOkr;
+import co.com.sofkau.api.model.task.DeleteRequest;
 import co.com.sofkau.api.model.task.PostRequest;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
@@ -55,4 +57,22 @@ public class OkrSteps {
         assertThat(respuestaKr).hasNoNullFieldsOrProperties();
         SerenityRest.lastResponse().print();
     }
+
+    @Cuando("se tiene la informacion de un KR para eliminar")
+    public void seTieneLaInformacionDeUnKRParaEliminar() {
+        actor.attemptsTo(DeleteRequest.withResource(variables.getProperty("pathDelete").concat("61147bbe6bffc40015cf1b52")));
+
+    }
+
+    @Entonces("se elimino un KR exitosamente")
+    public void seEliminoUnKRExitosamente() {
+
+        actor.should(seeThatResponse("ver el código de respuesta", response -> response.statusCode(201)));
+        SerenityRest.lastResponse().print();
+        RespuestaDelete respuestaDelete = SerenityRest.lastResponse().jsonPath().getObject("", RespuestaDelete.class);
+        assertThat(respuestaDelete).hasNoNullFieldsOrProperties();
+
+    }
+
+
 }
