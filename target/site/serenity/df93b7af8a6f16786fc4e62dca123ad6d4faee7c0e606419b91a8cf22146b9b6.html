@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Eliminacion exitosa de un KR</title>
+    <title>Llamado exitoso de los OKR's con sus KR's de un usuario</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -127,7 +127,7 @@
             <a href="index.html" class="breadcrumbs">Home</a>
 
             > <a href="1014399cae3cec257010d30f4d611ad2a4479c873eafe796fb52274e7fa04601.html">Servicio POST Crear OKR</a>
-        > Eliminacion exitosa de un KR
+        > Llamado exitoso de los OKR's con sus KR's de un usuario
         </span>
         </div>
         <div class="rightbg"></div>
@@ -181,7 +181,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    Eliminacion exitosa de un KR
+                                    Llamado exitoso de los OKR's con sus KR's de un usuario
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -276,7 +276,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Cuando se tiene la informacion de un KR para eliminar
+                                                Cuando se tiene la informacion para llamar a un OKR y sus OKR's
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -285,7 +285,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.59s</span></td>
+                        <td width="100"><span class="top-level-step">0.58s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -307,7 +307,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Edwinqa delete request
+                                                Edwinqa get request
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -338,7 +338,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                EdwinQA executes a DELETE on the resource api/kr/delete/61147bbe6bffc40015cf1b52
+                                                EdwinQA executes a GET on the resource api/okr/allokrsbyuser/611573c2a2605b535bfab39a
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -347,7 +347,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.56s</span></td>
+                        <td width="100"><span class="nested-step">0.55s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -365,7 +365,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                DELETE https://back-node-okr-qa.herokuapp.com/api/kr/delete/61147bbe6bffc40015cf1b52
+                                                GET https://back-node-okr-qa.herokuapp.com/api/okr/allokrsbyuser/611573c2a2605b535bfab39a
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -381,7 +381,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>Status code: 201</p>
+                                        <p>Status code: 200</p>
                                         <p>Content Type: null</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*</pre>
@@ -390,9 +390,9 @@
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 56<br>Etag: W/&quot;38-9QPZhkSHPmCtXsiqml2EkV5E+Og&quot;<br>Date: Fri, 13 Aug 2021 04:18:20 GMT<br>Via: 1.1 vegur</pre>
+                                        <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 1574<br>Etag: W/&quot;626-a8qK7+C4J+wxytXJsMrGxSbLzo8&quot;<br>Date: Fri, 13 Aug 2021 04:18:21 GMT<br>Via: 1.1 vegur</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;dataId&quot;: &quot;No existe Dicho Kr&quot;,<br>    &quot;message&quot;: &quot;kr not Exist&quot;<br>}</pre>
+                                        <pre>{<br>    &quot;data&quot;: [<br>        {<br>            &quot;okr&quot;: {<br>                &quot;historicalProgress&quot;: [<br>                    <br>                ],<br>                &quot;_id&quot;: &quot;6114a3ef6bffc40015cf1c4a&quot;,<br>                &quot;objective&quot;: &quot;acostarnos ya&quot;,<br>                &quot;title&quot;: &quot;acostemonos&quot;,<br>                &quot;managerId&quot;: &quot;611573c2a2605b535bfab39a&quot;,<br>                &quot;description&quot;: &quot;ya es hora de dormir&quot;,<br>                &quot;verticalId&quot;: &quot;Calidad&quot;,<br>                &quot;currentProgress&quot;: 0<br>            },<br>            &quot;krs&quot;: [<br>                <br>            ]<br>        },<br>        {<br>            &quot;okr&quot;: {<br>                &quot;historicalProgress&quot;: [<br>                    {<br>                        &quot;date&quot;: &quot;2021/08/13&quot;,<br>                        &quot;progress&quot;: 12<br>                    }<br>                ],<br>                &quot;_id&quot;: &quot;6115d6da3b7721001559db8d&quot;,<br>                &quot;objective&quot;: &quot;Vamos por ello 6&quot;,<br>                &quot;title&quot;: &quot;OSCAR&quot;,<br>                &quot;managerId&quot;: &quot;611573c2a2605b535bfab39a&quot;,<br>                &quot;description&quot;: &quot;Sin descripción&quot;,<br>                &quot;verticalId&quot;: &quot;abcde&quot;,<br>                &quot;currentProgress&quot;: 12<br>            },<br>            &quot;krs&quot;: [<br>                {<br>                    &quot;_id&quot;: &quot;6115d6f53b7721001559db8f&quot;,<br>                    &quot;title&quot;: &quot;Lopera1&quot;,<br>                    &quot;idOkr&quot;: &quot;6115d6da3b7721001559db8d&quot;,<br>                    &quot;description&quot;: &quot;lorep ipsum&quot;,<br>                    &quot;managerName&quot;: &quot;perri&quot;,<br>                    &quot;managerEmail&quot;: &quot;perri@loqsea.com&quot;,<br>                    &quot;startDate&quot;: &quot;2020/08/05&quot;,<br>                    &quot;endDate&quot;: &quot;2020/08/08&quot;,<br>                    &quot;loadValue&quot;: 10,<br>                    &quot;progress&quot;: 100<br>                },<br>                {<br>                    &quot;_id&quot;: &quot;6115d6fc3b7721001559db91&quot;,<br>                    &quot;title&quot;: &quot;Lopera2&quot;,<br>                    &quot;idOkr&quot;: &quot;6115d6da3b7721001559db8d&quot;,<br>                    &quot;description&quot;: &quot;lorep ipsum&quot;,<br>                    &quot;managerName&quot;: &quot;perri&quot;,<br>                    &quot;managerEmail&quot;: &quot;perri@loqsea.com&quot;,<br>                    &quot;startDate&quot;: &quot;2020/08/05&quot;,<br>                    &quot;endDate&quot;: &quot;2020/08/08&quot;,<br>                    &quot;loadValue&quot;: 10,<br>                    &quot;progress&quot;: 10<br>                },<br>                {<br>                    &quot;_id&quot;: &quot;6115d7013b7721001559db93&quot;,<br>                    &quot;title&quot;: &quot;Lopera3&quot;,<br>                    &quot;idOkr&quot;: &quot;6115d6da3b7721001559db8d&quot;,<br>                    &quot;description&quot;: &quot;lorep ipsum&quot;,<br>                    &quot;managerName&quot;: &quot;perri&quot;,<br>                    &quot;managerEmail&quot;: &quot;perri@loqsea.com&quot;,<br>                    &quot;startDate&quot;: &quot;2020/08/05&quot;,<br>                    &quot;endDate&quot;: &quot;2020/08/08&quot;,<br>                    &quot;loadValue&quot;: 10,<br>                    &quot;progress&quot;: 10<br>                }<br>            ]<br>        },<br>        {<br>            &quot;okr&quot;: {<br>                &quot;historicalProgress&quot;: [<br>                    <br>                ],<br>                &quot;_id&quot;: &quot;6115d9d501fb6d0016b166df&quot;,<br>                &quot;objective&quot;: &quot;Aumentar ventas&quot;,<br>                &quot;title&quot;: &quot;Ganar dinero&quot;,<br>                &quot;managerId&quot;: &quot;611573c2a2605b535bfab39a&quot;,<br>                &quot;description&quot;: &quot;El cumplimiento del objetivo&quot;,<br>                &quot;verticalId&quot;: &quot;DEV&quot;,<br>                &quot;currentProgress&quot;: 0<br>            },<br>            &quot;krs&quot;: [<br>                <br>            ]<br>        }<br>    ],<br>    &quot;message&quot;: &quot;Okrs de usuario con sus krs listado&quot;<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +433,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Entonces se elimino un KR exitosamente
+                                                Entonces se llama exitosamente el OKR con sus KR's
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -442,7 +442,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="100"><span class="top-level-step">0.32s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -477,7 +477,7 @@
                 <tr class="test-SUCCESS">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.61s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.92s</em></span></td>
                 </tr>
 
             </table>

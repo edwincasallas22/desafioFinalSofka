@@ -9,5 +9,4 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/servicios.feature",
         glue = "screenplay/steps")
 public class TestRunnerOkr {
-
 }

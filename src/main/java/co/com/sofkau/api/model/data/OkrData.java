@@ -30,7 +30,7 @@ public class OkrData {
                 .loadValue(10)
                 .title("probando")
                 .description("lorep ipsum")
-                .progress(10)
+                .progress(77)
                 .build();
     }
 
